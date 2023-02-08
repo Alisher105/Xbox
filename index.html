@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/null.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
     <title>Xbox</title>
 </head>
@@ -14,43 +18,154 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__nav">
-                <div class="header__logo">
-                    <a href=""><img src="./img/logo/Group.png" alt=""></a>
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a href="#"><img src="./img/logo/Group.png" alt=""></a>
                 </div>
-                <ul id="menu">
-                    <li>
-                        <a class="menu__icon" href="#">Games</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Для новичка</a></li>
-                            <li><a href="#">Опытного пользователя</a></li>
-                            <li><a href="#">И еще для кого-то..</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="menu__icon" href="#">Consoles</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Личный опыт</a></li>
-                            <li><a href="#">Чужой опыт</a></li>
-                            <li><a href="#">Неизвестный опыт</i></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Community</a></li>
-                    <li>
-                        <input name="s" placeholder="Search" type="search">
-                    </li>
-                    <li>
-                        <a class="menu__icon _prof" href="#"> My XBOX</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Личный опыт</a></li>
-                            <li><a href="#">Чужой опыт</a></li>
-                            <li><a href="#">Неизвестный опыт</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <input class="side-menu" type="checkbox" id="side-menu" />
+                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Consoles</a> </li>
+                        <li><a href="#">Community</a></li>
+                        <li>
+                            <form class="example" action="action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                            </form>
+                        </li>
+                        <li><a href="#">My XBOX</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
+    <section id="slider_bl">
+        <div class="wrapper">
+            <input checked type=radio name="slider" id="slide1" />
+            <input type=radio name="slider" id="slide2" />
+            <input type=radio name="slider" id="slide3" />
+            <input type=radio name="slider" id="slide4" />
+            <div class="slider-wrapper">
+                <div class=inner>
+                    <article>
+                        <div class="info top-games">
+                            <div class="slider__title">
+                                <h2>Star Wars</h2>
+                                <p>Battlefront II</p>
+                            </div>
+                            <div class="slider__btn">
+                                <a href="https://youtu.be/ZwWLns7-xN8" class="slider__btn-game">Watch Trailer</a>
+                                <a href="" class="slider__btn-game _btn-color">Explore Games</a>
+                            </div>
+                        </div>
+                        <img src="file:///D:/_work/xbox/img/bg/Star-Wars-Battlefront-II-combat.png" />
+                    </article>
+                    <article>
+                        <div class="info top-games">
+                            <div class="slider__title">
+                                <h2>Star Wars</h2>
+                                <p>Battlefront II</p>
+                            </div>
+                            <div class="slider__btn">
+                                <a href="https://youtu.be/ZwWLns7-xN8" class="slider__btn-game">Watch Trailer</a>
+                                <a href="" class="slider__btn-game _btn-color">Explore Games</a>
+                            </div>
+                        </div>
+                        <img src="file:///D:/_work/xbox/img/bg/Star-Wars-Battlefront-II-combat.png" />
+                    </article>
+                    <article>
+                        <div class="info top-games">
+                            <div class="slider__title">
+                                <h2>Star Wars</h2>
+                                <p>Battlefront II</p>
+                            </div>
+                            <div class="slider__btns">
+                                <a href="https://youtu.be/ZwWLns7-xN8" class="slider__btn-game">Watch Trailer</a>
+                                <a href="" class="slider__btn-game _btn-color">Explore Games</a>
+                            </div>
+                        </div>
+                        <img src="file:///D:/_work/xbox/img/bg/Star-Wars-Battlefront-II-combat.png" />
+                    </article>
+                    <article>
+                        <div class="info top-games">
+                            <div class="slider__title">
+                                <h4>Star Wars</h4>
+                                <p>Battlefront II</p>
+                            </div>
+                            <div class="slider__btn">
+                                <a href="https://youtu.be/ZwWLns7-xN8" class="slider__btn-game">Watch Trailer</a>
+                                <a href="" class="slider__btn-game _btn-color">Explore Games</a>
+                            </div>
+                        </div>
+                        <img src="file:///D:/_work/xbox/img/bg/Star-Wars-Battlefront-II-combat.png" />
+                    </article>
+                </div>
+            </div>
+            <div class="slider-prev-next-control">
+                <label for=slide1></label>
+                <label for=slide2></label>
+                <label for=slide3></label>
+                <label for=slide4></label>
+            </div>
+            <div class="slider-dot-control">
+                <label for=slide1></label>
+                <label for=slide2></label>
+                <label for=slide3></label>
+                <label for=slide4></label>
+            </div>
+        </div>
+    </section>
+    <aside class="aside">
+        <div class="container">
+            <div class="aside__wrapper">
+                <div class="aside__wrapper-title">
+                    <img src="./img/aside/xbox icon.png" alt="">
+                    <h3>The best value</h3>
+                    <p>in games and entertainment</p>
+                </div>
+                <div class="aside__cards">
+                    <div class="aside__card">
+                        <div class="card__img">
+                            <img src="./img/aside/xbox-one-x.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>XBOX ONE X</h4>
+                            <p>Faster Processing<br> Smoother Gameplay</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="4">Explore Consoles & Accessories</a></button>
+                        </div>
+                    </div>
+                    <div class="aside__card">
+                        <div class="card__img">
+                            <img class="img__pad-gg" src="./img/aside/mixer-logo.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>mixer Streaming</h4>
+                            <p>The Next Generation<br>Of Life Game Streaming</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="3">Start Watching mixer</a></button>
+                        </div>
+                    </div>
+                    <div class="aside__card">
+                        <div class="card__img">
+                            <img class="img__pad-mixer" src="./img/aside/games-gold.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>Free Games Every Month</h4>
+                            <p>Get up to $700<br> in free games</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="">Get Free Games</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
 </body>
 
 </html>

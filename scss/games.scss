@@ -1,0 +1,341 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1594px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 50px;
+    @media all and(max-width: 1200px) {
+        max-width: 1140px;
+        width: 100%;
+        padding: 0px 30px;
+    }
+    @media all and(max-width: 992px) {
+        max-width: 960px;
+        width: 100%;
+        padding: 0px 16px;
+    }
+    @media all and(max-width: 576px) {
+        width: 100%;
+        margin: 0;
+        padding: 0px 18px;
+    }
+}
+
+.main {
+    background: url(../img/bg/CoD-WWII.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 812px;
+    @media all and(max-width: 992px) {
+        background-position-x: -260px;
+        height: 100vh;
+    }
+    @media all and(max-width: 576px) {
+        background-position-x: -300px;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 14em 11em 0px 0px;
+        @media all and(max-width: 992px) {
+            padding: 10em 0em 0px 0px;
+            display: flex;
+            align-items: center;
+        }
+        @media all and(max-width: 576px) {}
+    }
+    &__game {
+        padding-bottom: 164px;
+        h3 {
+            font-size: 43px;
+            font-weight: 400;
+            line-height: 42px;
+            color: #FFFFFF;
+        }
+        p {
+            font-size: 16px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+    }
+    &__btn {
+        a {
+            padding: 12px 38px;
+            border-radius: 4px;
+            background: #8DD83D;
+            border-radius: 4px;
+            color: #FFFFFF;
+            font-size: 16px;
+            margin-right: 10px;
+            @media all and(max-width: 992px) {
+                padding: 12px 30px;
+            }
+            @media all and(max-width: 768px) {
+                padding: 10px 26px;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            @media all and(max-width: 572px) {
+                padding: 8px 20px;
+            }
+        }
+        a:hover {
+            background: #81c03d;
+        }
+    }
+}
+
+// game начало----------------------------------
+.game {
+    &__demonstration {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__demonstration-title {
+        p {
+            font-size: 36px;
+            line-height: 42px;
+            color: #435766;
+            padding: 100px 0px 90px 0px;
+            @media all and(max-width: 992px) {
+                font-size: 34px;
+                padding: 60px 0px 40px 0px;
+            }
+            @media all and(max-width: 768px) {
+                font-size: 32px;
+                padding: 50px 0px 30px 0px;
+            }
+            @media all and(max-width: 572px) {
+                padding: 40px 0px 20px 0px;
+            }
+        }
+    }
+    &__demonstration-btn {
+        padding-bottom: 60px;
+        @media all and(max-width: 992px) {
+            padding-bottom: 40px;
+        }
+        @media all and(max-width: 768px) {
+            padding-bottom: 30px;
+        }
+        @media all and(max-width: 572px) {
+            padding-bottom: 20px;
+        }
+    }
+    &__demonstration-video {
+        text-align: center;
+        iframe {
+            border-radius: 11px;
+            width: 66%;
+            height: 562px;
+            @media all and(max-width: 1200px) {
+                width: 70%;
+                height: 462px;
+            }
+            @media all and(max-width: 992px) {
+                height: 255px;
+            }
+            @media all and(max-width: 576px) {
+                width: 100%;
+            }
+        }
+    }
+    &__screenshots {
+        display: flex;
+        flex-direction: column;
+        font-size: 36px;
+        line-height: 42px;
+        color: #435766;
+        padding-top: 98px;
+        @media all and(max-width: 1200px) {
+            font-size: 34px;
+        }
+        @media all and(max-width: 992px) {
+            font-size: 28px;
+        }
+        @media all and(max-width: 768px) {
+            font-size: 20px;
+        }
+        @media all and(max-width: 572px) {
+            font-size: 18px;
+        }
+        img {
+            width: 50%;
+        }
+        p {
+            width: 30%;
+            @media all and(max-width: 1200px) {}
+            @media all and(max-width: 992px) {}
+            @media all and(max-width: 768px) {
+                width: 33%;
+            }
+            @media all and(max-width: 572px) {
+                width: 40%;
+            }
+        }
+    }
+    &__screenshots-one {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 94px;
+    }
+    &__screenshots-two {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.demonstration {
+    &__btn {
+        padding: 16px 52px;
+        border-radius: 4px;
+        background: #8DD83D;
+        border-radius: 4px;
+        color: #FFFFFF;
+        font-size: 16px;
+        margin-right: 10px;
+        @media all and(max-width: 992px) {
+            padding: 12px 30px;
+        }
+        @media all and(max-width: 768px) {
+            padding: 10px 26px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        @media all and(max-width: 572px) {
+            padding: 8px 20px;
+        }
+    }
+    &__btn:hover {
+        background: #81c03d;
+    }
+}
+
+._btn-color {
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+}
+
+._btn-color:hover {
+    background: linear-gradient(180deg, #686C6F 100%, #373A3C 0%);
+}
+
+// game конец----------------------------
+.specifications {
+    &__technical {
+        display: flex;
+        flex-direction: column;
+        padding-top: 105px;
+    }
+    &__technical-title {
+        h4 {
+            font-size: 36px;
+            line-height: 42px;
+            color: #435766;
+            text-align: center;
+            padding-bottom: 47px;
+            font-weight: 400;
+            @media all and(max-width: 1200px) {
+                font-size: 34px;
+            }
+            @media all and(max-width: 992px) {
+                font-size: 32px;
+            }
+            @media all and(max-width: 768px) {
+                font-size: 28px;
+            }
+            @media all and(max-width: 572px) {
+                font-size: 26px;
+            }
+        }
+    }
+    &__technical-text {
+        display: flex;
+        @media all and(max-width: 572px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__technical-description {
+        p {
+            font-size: 21px;
+            line-height: 24px;
+            color: #435766;
+            height: 100px;
+            width: 76%;
+            @media all and(max-width: 1200px) {}
+            @media all and(max-width: 992px) {
+                font-size: 20px;
+                text-align: center;
+            }
+            @media all and(max-width: 768px) {
+                font-size: 18px;
+                width: 100%;
+            }
+            @media all and(max-width: 572px) {
+                font-size: 16px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.specifications {
+    &__btn {
+        display: flex;
+        justify-content: center;
+        padding: 80px 0px 109px 0px;
+        @media all and(max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0px 60px 0px;
+        }
+        @media all and(max-width: 572px) {
+            padding: 20px 0px 40px 0px;
+        }
+        a {
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            border-radius: 4px;
+            padding: 16px 52px;
+            margin-right: 10px;
+            line-height: 21px;
+            @media all and(max-width: 992px) {
+                padding: 12px 30px;
+            }
+            @media all and(max-width: 768px) {
+                padding: 10px 26px;
+                margin-bottom: 10px;
+            }
+            @media all and(max-width: 572px) {
+                padding: 8px 20px;
+            }
+        }
+    }
+}
+
+.btn {
+    &__gray {
+        background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    }
+    &__gray:hover {
+        background: linear-gradient(180deg, #686C6F 100%, #373A3C 0%);
+    }
+    &__green {
+        background-color: #8DD83D;
+    }
+    &__green:hover {
+        background: #81c03d;
+    }
+}
