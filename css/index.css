@@ -133,7 +133,6 @@
   background: #8DD83D;
   font-size: 16px;
   border-radius: 4px;
-  color: #FFFFFF;
 }
 
 .card__button button a {
@@ -147,4 +146,129 @@
 
 .img__pad-mixer {
   padding: 33px 59px;
+}
+
+.design {
+  background: url(../img/bg/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
+}
+
+@media all and (max-width: 1200px) {
+  .design {
+    height: 80%;
+  }
+}
+
+.design__wrapper {
+  padding: 160px 0px 145px 130px;
+}
+
+@media all and (max-width: 1200px) {
+  .design__wrapper {
+    padding: 140px 0px 135px 115px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .design__wrapper {
+    padding: 115px 0px 115px 100px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .design__wrapper {
+    padding: 70px 0px 70px 60px;
+  }
+}
+
+.design__title h4 {
+  font-size: 52px;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+@media all and (max-width: 1200px) {
+  .design__title h4 {
+    font-size: 48px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .design__title h4 {
+    font-size: 42px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .design__title h4 {
+    font-size: 36px;
+  }
+}
+
+.design__title p {
+  font-size: 28px;
+  line-height: 38px;
+  color: #FFFFFF;
+  padding: 20px 0px 40px 0px;
+}
+
+@media all and (max-width: 1200px) {
+  .design__title p {
+    font-size: 26px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .design__title p {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .design__title p {
+    font-size: 18px;
+  }
+}
+
+.design__btn button a {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.design__btn-lab {
+  background: -webkit-gradient(linear, left top, left bottom, from(#686C6F), to(#373A3C));
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  border-radius: 4px;
+  padding: 22px 46px;
+  color: #FFFFFF;
+}
+
+@media all and (max-width: 1200px) {
+  .design__btn-lab {
+    padding: 20px 44px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .design__btn-lab {
+    padding: 18px 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+._lab-color {
+  background: #8DD83D;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+@media all and (max-width: 992px) {
+  ._lab-color {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
 }
