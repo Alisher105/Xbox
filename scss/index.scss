@@ -102,13 +102,12 @@
 
 // aside конец-----------------------------------------------------------------
 // design начало---------------------------------------------------------------
-// design конец----------------------------------------------------------------
 .design {
     background: url(../img/bg/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    height: 100vh;
+    height: 638px;
     @media all and(max-width: 1200px) {
         height: 80%;
     }
@@ -186,3 +185,5 @@
         margin-top: 10px;
     }
 }
+
+// design конец----------------------------------------------------------------
