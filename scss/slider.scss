@@ -67,7 +67,15 @@
     border: 1px solid #8DD83D;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
-    transition: all .3s
+    transition: all .3s;
+    @media all and(max-width: 992px) {
+        width: 9px;
+        height: 9px;
+    }
+    @media all and(max-width: 576px) {
+        width: 6px;
+        height: 6px;
+    }
 }
 
 #slider_bl .slider-dot-control label:hover {
@@ -160,7 +168,7 @@
     @media all and(max-width: 762px) {
         padding: 0px 1.5em 0px 0px;
         font-size: 28px;
-        line-height: 15px;
+        line-height: 20px;
     }
     @media all and(max-width: 576px) {
         font-size: 20px;

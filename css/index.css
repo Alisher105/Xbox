@@ -5,6 +5,18 @@
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
 }
 
+@media all and (max-width: 992px) {
+  .aside {
+    padding: 66px 0 120px 0px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .aside {
+    padding: 40px 0 50px 0px;
+  }
+}
+
 .aside__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,7 +186,7 @@
 
 @media all and (max-width: 992px) {
   .design__wrapper {
-    padding: 115px 0px 115px 100px;
+    padding: 115px 0px 115px 80px;
   }
 }
 
@@ -255,6 +267,14 @@
 @media all and (max-width: 992px) {
   .design__btn-lab {
     padding: 18px 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .design__btn-lab {
+    padding: 16px 28px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

@@ -23,12 +23,14 @@
 }
 
 .header {
-    background: #373A3C;
-    top: 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #373A3C;
+    z-index: 2;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -37,7 +39,11 @@
 }
 
 .logo {
-    img {}
+    img {
+        @media all and(max-width: 992px) {
+            padding-left: 15px;
+        }
+    }
 }
 
 .nav {
@@ -46,6 +52,8 @@
     position: fixed;
     background: #373A3C;
     overflow: hidden;
+    top: 82px;
+    left: 0;
 }
 
 .menu a {
@@ -241,6 +249,17 @@ form.example input[type=text] {
 .footer__row {
     display: flex;
     padding-bottom: 49px;
+    @media all and(max-width: 1200px) {
+        padding-bottom: 40px;
+    }
+    @media all and(max-width: 992px) {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    @media all and(max-width: 576px) {
+        padding-bottom: 0px;
+    }
 }
 
 .footer__row-col ul {
@@ -250,6 +269,9 @@ form.example input[type=text] {
 .footer {
     background: #373A3C;
     padding: 70px 0;
+    @media all and(max-width: 576px) {
+        padding: 20px 0;
+    }
     &__copyright {
         border-top: 1px solid #aaaaaa;
         display: flex;
@@ -267,6 +289,10 @@ form.example input[type=text] {
 .footer__row-col {
     width: 25%;
     padding: 0 15px;
+    @media all and(max-width: 576px) {
+        width: 35%;
+        padding: 15px 15px;
+    }
 }
 
 .footer__row-col h4 {

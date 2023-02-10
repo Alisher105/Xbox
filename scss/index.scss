@@ -4,6 +4,12 @@
 .aside {
     padding: 72px 0 162px 0px;
     background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+    @media all and(max-width: 992px) {
+        padding: 66px 0 120px 0px;
+    }
+    @media all and(max-width: 576px) {
+        padding: 40px 0 50px 0px;
+    }
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -117,7 +123,7 @@
             padding: 140px 0px 135px 115px;
         }
         @media all and(max-width: 992px) {
-            padding: 115px 0px 115px 100px;
+            padding: 115px 0px 115px 80px;
         }
         @media all and(max-width: 576px) {
             padding: 70px 0px 70px 60px;
@@ -170,6 +176,10 @@
         }
         @media all and(max-width: 992px) {
             padding: 18px 40px;
+            flex-wrap: wrap;
+        }
+        @media all and(max-width: 576px) {
+            padding: 16px 28px;
             flex-wrap: wrap;
         }
     }
