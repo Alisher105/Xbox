@@ -9,7 +9,25 @@
 
 .swiper__title {
   text-align: center;
-  padding: 97px 0px 54px 0px;
+  padding: 97px 0px 34px 0px;
+}
+
+@media all and (max-width: 1200px) {
+  .swiper__title {
+    padding: 90px 0px 20px 0px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .swiper__title {
+    padding: 50px 0px 10px 0px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .swiper__title {
+    padding: 40px 0px 5px 0px;
+  }
 }
 
 .swiper__title h3 {
@@ -18,10 +36,26 @@
   color: #FFFFFF;
 }
 
+@media all and (max-width: 1200px) {
+  .swiper__title h3 {
+    font-size: 34px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .swiper__title h3 {
+    font-size: 32px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .swiper__title h3 {
+    font-size: 28px;
+  }
+}
+
 #swiper .wrapper {
   position: relative;
-  overflow: hidden;
-  margin: 0px 0px 0px 66px;
 }
 
 #swiper input {
@@ -35,6 +69,7 @@
   transform: translateZ(0);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  padding: 24px;
 }
 
 #swiper .swiper-wrapper .swiper-inner {
@@ -77,12 +112,19 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   line-height: 28px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#swiper article:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #swiper .swiper-prev-next-control {
   height: 50px;
   position: absolute;
-  top: 50%;
+  top: -5%;
   width: 100%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -301,9 +343,31 @@
   }
 }
 
+.card__description p {
+  font-size: 21px;
+}
+
 .swiper__btn {
   padding: 74px 0px 140px 0px;
   text-align: center;
+}
+
+@media all and (max-width: 1200px) {
+  .swiper__btn {
+    padding: 60px 0px 120px 0px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .swiper__btn {
+    padding: 40px 0px 80px 0px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .swiper__btn {
+    padding: 20px 0px 60px 0px;
+  }
 }
 
 .swiper__btn button {
@@ -312,6 +376,11 @@
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
   padding: 10px 30px;
   border-radius: 4px;
+}
+
+.swiper__btn button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #686C6F), color-stop(0%, #373A3C));
+  background: linear-gradient(180deg, #686C6F 100%, #373A3C 0%);
 }
 
 .swiper__btn button a {

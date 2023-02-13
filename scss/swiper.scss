@@ -9,18 +9,39 @@
 
 .swiper__title {
     text-align: center;
-    padding: 97px 0px 54px 0px;
+    padding: 97px 0px 34px 0px;
+    @media all and(max-width: 1200px) {
+        padding: 90px 0px 20px 0px;
+    }
+    @media all and(max-width: 992px) {
+        padding: 50px 0px 10px 0px;
+    }
+    @media all and(max-width: 576px) {
+        padding: 40px 0px 5px 0px;
+    }
     h3 {
         font-size: 36px;
         font-weight: 400;
         color: #FFFFFF;
+        @media all and(max-width: 1200px) {
+            font-size: 34px;
+        }
+        @media all and(max-width: 992px) {
+            font-size: 32px;
+        }
+        @media all and(max-width: 576px) {
+            font-size: 28px;
+        }
     }
 }
 
 #swiper .wrapper {
     position: relative;
-    overflow: hidden;
-    margin: 0px 0px 0px 66px;
+    // margin: 0px 0px 0px 66px;
+    // @media all and(max-width: 576px) {
+    //     margin: 0px 0px 0px 0px;
+    //     // padding: 0px 18px;
+    // }
 }
 
 #swiper input {
@@ -38,6 +59,7 @@
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+    padding: 24px;
 }
 
 #swiper .swiper-wrapper .swiper-inner {
@@ -73,12 +95,16 @@
     flex-direction: column;
     justify-content: space-between;
     line-height: 28px;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 #swiper .swiper-prev-next-control {
     height: 50px;
     position: absolute;
-    top: 50%;
+    top: -5%;
     width: 100%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -239,14 +265,33 @@
     }
 }
 
+.card__description {
+    p {
+        font-size: 21px;
+    }
+}
+
 .swiper__btn {
     padding: 74px 0px 140px 0px;
     text-align: center;
+    @media all and(max-width: 1200px) {
+        padding: 60px 0px 120px 0px;
+    }
+    @media all and(max-width: 992px) {
+        padding: 40px 0px 80px 0px;
+    }
+    @media all and(max-width: 576px) {
+        padding: 20px 0px 60px 0px;
+    }
     button {
         text-align: center;
         background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
         padding: 10px 30px;
         border-radius: 4px;
+        &:hover {
+            background: linear-gradient(180deg, #686C6F 100%, #373A3C 0%);
+            ;
+        }
         a {
             font-size: 21px;
             color: #FFFFFF;

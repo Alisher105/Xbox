@@ -24,11 +24,16 @@
     @media all and(max-width: 992px) {
         justify-content: center;
     }
-    @media all and(max-width: 576px) {}
+    @media all and(max-width: 576px) {
+        height: 240px;
+    }
 }
 
 #slider_bl article img {
-    width: 100%
+    width: 100%;
+    @media all and(max-width: 576px) {
+        height: 100%;
+    }
 }
 
 #slider_bl .slider-prev-next-control {
@@ -105,7 +110,9 @@
     color: #FFFFFF;
     font-size: 16px;
     margin-right: 10px;
-    @media all and(max-width: 1200px) {}
+    &:hover {
+        background: #67a525;
+    }
     @media all and(max-width: 992px) {
         padding: 10px 26px;
         font-size: 15px;

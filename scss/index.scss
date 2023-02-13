@@ -65,6 +65,10 @@
         border: 1px solid #8DD83D;
         border-radius: 4px;
         line-height: 29px;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.1);
+        }
         @media all and(max-width: 992px) {
             margin-bottom: 20px;
         }
@@ -72,7 +76,13 @@
 }
 
 .card {
-    &__img {}
+    width: 100%;
+    &__img {
+        img {
+            width: 318px;
+            height: 180px;
+        }
+    }
     &__description {
         padding: 16px 0px 0px 22px;
         h4 {
@@ -94,6 +104,9 @@
             background: #8DD83D;
             font-size: 16px;
             border-radius: 4px;
+            &:hover {
+                background: #67a525;
+            }
         }
         button a {
             font-size: 16px;
@@ -128,10 +141,11 @@
             padding: 140px 0px 135px 115px;
         }
         @media all and(max-width: 992px) {
-            padding: 115px 0px 115px 100px;
+            padding: 80px 20px;
+            text-align: center;
         }
         @media all and(max-width: 576px) {
-            padding: 70px 0px 70px 60px;
+            padding: 40px 0px 40px 00px;
         }
     }
     &__title {
@@ -176,6 +190,10 @@
         border-radius: 4px;
         padding: 22px 46px;
         color: #FFFFFF;
+        &:hover {
+            background: linear-gradient(180deg, #686C6F 100%, #373A3C 0%);
+            ;
+        }
         @media all and(max-width: 1200px) {
             padding: 20px 44px;
         }
@@ -192,6 +210,9 @@
     background: #8DD83D;
     border-radius: 4px;
     margin-left: 10px;
+    &:hover {
+        background: #67a525;
+    }
     @media all and(max-width: 1200px) {}
     @media all and(max-width: 992px) {
         margin-left: 0px;

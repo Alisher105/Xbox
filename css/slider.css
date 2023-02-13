@@ -36,8 +36,20 @@
   }
 }
 
+@media all and (max-width: 576px) {
+  #slider_bl article {
+    height: 240px;
+  }
+}
+
 #slider_bl article img {
   width: 100%;
+}
+
+@media all and (max-width: 576px) {
+  #slider_bl article img {
+    height: 100%;
+  }
 }
 
 #slider_bl .slider-prev-next-control {
@@ -116,6 +128,10 @@
   color: #FFFFFF;
   font-size: 16px;
   margin-right: 10px;
+}
+
+.slider__btn-game:hover {
+  background: #67a525;
 }
 
 @media all and (max-width: 992px) {
