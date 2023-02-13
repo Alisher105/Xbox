@@ -29,6 +29,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    z-index: 2;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -37,6 +39,9 @@
 }
 
 .logo {
+    @media all and (max-width: 992px) {
+        padding-left: 15px;
+    }
     img {}
 }
 
@@ -45,22 +50,107 @@
     height: 100%;
     position: fixed;
     background: #373A3C;
-    overflow: hidden;
+    // overflow: hidden;
+    top: 80px;
+    @media all and (max-width: 768px) {
+        overflow: hidden;
+    }
 }
 
-.menu a {
-    display: block;
-    font-size: 16px;
-    padding: 20px;
-    color: rgba(255, 255, 255, 0.5);
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+    z-index: 2;
+    @media (min-width: 768px) {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+}
+
+.menu {
+    display: flex;
+    @media all and (max-width: 768px) {
+        flex-direction: column;
+    }
+    a {
+        display: block;
+        font-size: 16px;
+        padding: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        @media all and (max-width: 992px) {
+            padding: 18px;
+        }
+        @media all and (max-width: 850px) {
+            padding: 12px;
+        }
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+    li {
+        position: relative;
+    }
+    &>li:hover &__subitem {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    &__item {
+        &:after {
+            content: "\f107";
+            font-family: "FontAwesome";
+            color: inherit;
+            margin-left: 10px;
+            color: #8DD83D;
+        }
+        &:hover {
+            &::after {
+                content: "\f106";
+                font-family: "FontAwesome";
+                color: #8DD83D;
+            }
+        }
+    }
+    &__subitem {
+        background: #373A3C;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 5;
+        width: 180px;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+        transition: .5s ease-in-out;
+        a {
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            @media (max-width: 768px) {
+                &:hover {
+                    background-color: transparent;
+                    color: gray;
+                }
+            }
+        }
+        li:last-child a {
+            border-bottom: none;
+        }
+    }
 }
 
 .example {
     padding-top: 12px;
-    @media all and(max-width: 850px) {
-        padding-left: 16px;
+    @media all and (max-width: 992px) {
+        padding: 10px 0px 0px 16px;
     }
-    @media all and(max-width: 576px) {}
+    @media all and (max-width: 850px) {
+        padding: 4px 0px 0px 10px;
+    }
 }
 
 form.example input[type=text] {
@@ -69,16 +159,14 @@ form.example input[type=text] {
     border: 1px solid grey;
     background: #f1f1f1;
     border-radius: 4px;
-}
-
-.menu a:hover {
-    color: #FFFFFF;
-}
-
-.nav {
-    max-height: 0;
-    transition: max-height .5s ease-out;
-    z-index: 2;
+    @media all and (max-width: 992px) {
+        font-size: 15px;
+        padding: 8px;
+    }
+    @media all and (max-width: 850px) {
+        font-size: 13px;
+        padding: 8px;
+    }
 }
 
 
@@ -88,6 +176,9 @@ form.example input[type=text] {
     cursor: pointer;
     float: right;
     padding: 40px 20px;
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 
@@ -218,29 +309,19 @@ form.example input[type=text] {
     top: 0;
 }
 
-@media (min-width: 768px) {
-    .nav {
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-    }
-    .menu li {
-        float: left;
-    }
-    .menu a:hover {
-        background-color: transparent;
-        color: gray;
-    }
-    .hamb {
-        display: none;
-    }
-}
-
 .footer__row {
     display: flex;
     padding-bottom: 49px;
+    @media all and (max-width: 992px) {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 28px;
+    }
+    @media all and (max-width: 576px) {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+    }
 }
 
 .footer__row-col ul {
@@ -250,11 +331,25 @@ form.example input[type=text] {
 .footer {
     background: #373A3C;
     padding: 70px 0;
+    @media all and(max-width: 992px) {
+        padding: 60px 0;
+    }
+    @media all and(max-width: 576px) {
+        padding: 40px 0;
+        text-align: center;
+    }
     &__copyright {
         border-top: 1px solid #aaaaaa;
         display: flex;
         justify-content: space-between;
         padding-top: 19px;
+        @media all and(max-width: 992px) {
+            padding-top: 15px;
+            justify-content: space-around;
+        }
+        @media all and(max-width: 576px) {
+            padding-top: 10px;
+        }
         p {
             font-size: 16px;
             line-height: 19px;
@@ -267,6 +362,13 @@ form.example input[type=text] {
 .footer__row-col {
     width: 25%;
     padding: 0 15px;
+    @media all and(max-width: 992px) {
+        width: 30%;
+    }
+    @media all and(max-width: 576px) {
+        width: 40%;
+        padding: 0px 0px 20px 0px;
+    }
 }
 
 .footer__row-col h4 {
@@ -274,6 +376,12 @@ form.example input[type=text] {
     color: #8DD83D;
     margin-bottom: 35px;
     font-weight: 500;
+    @media all and(max-width: 992px) {
+        margin-bottom: 25px;
+    }
+    @media all and(max-width: 576px) {
+        margin-bottom: 20px;
+    }
 }
 
 .footer__row-col h4::before {}

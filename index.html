@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/null.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/null.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Xbox</title>
 </head>
 
@@ -20,21 +21,40 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="logo">
-                    <a href="#"><img src="./img/logo/Group.png" alt=""></a>
+                    <a href="./index.html"><img src="./img/logo/Group.png" alt=""></a>
                 </div>
                 <input class="side-menu" type="checkbox" id="side-menu" />
                 <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
                 <nav class="nav">
                     <ul class="menu">
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Consoles</a> </li>
-                        <li><a href="#">Community</a></li>
+                        <li><a href="#" class="menu__item">Games</a>
+                            <ul class="menu__subitem">
+                                <li><a href="">Производство</a></li>
+                                <li><a href="">Магазин</a></li>
+                                <li><a href="">Сервис</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="menu__item">Consoles</a>
+                            <ul class="menu__subitem">
+                                <li><a href="">Производство</a></li>
+                                <li><a href="">Магазин</a></li>
+                                <li><a href="">Сервис</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"> Community</a></li>
                         <li>
                             <form class="example" action="action_page.php">
                                 <input type="text" placeholder="Search.." name="search">
                             </form>
                         </li>
-                        <li><a href="#">My XBOX</a></li>
+                        <li>
+                            <a href="#" class="menu__item"><img src="./img/header/my-prof.png" alt=""> My XBOX</a>
+                            <ul class="menu__subitem">
+                                <li><a href="">Производство</a></li>
+                                <li><a href="">Магазин</a></li>
+                                <li><a href="">Сервис</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -165,6 +185,100 @@
             </div>
         </div>
     </aside>
+    <section id="swiper">
+        <div class="swiper__title">
+            <h3>Exclusive games on XBOX</h3>
+        </div>
+        <div class="wrapper">
+            <input checked type=radio name="swiper" id="swiper1" />
+            <input type=radio name="swiper" id="swiper2" />
+            <input type=radio name="swiper" id="swiper3" />
+            <div class="swiper-wrapper">
+                <div class=swiper-inner>
+                    <article>
+                        <div class="card__img">
+                            <img src="./img/swiper/swiper-cod.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>Call of Duty: WWII</h4>
+                            <p>Faster Processing<br> Smoother Gameplay</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="./games.html">Explore Consoles & Accessories</a></button>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card__img">
+                            <img src="./img/swiper/swiper-car.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>Destiny 2</h4>
+                            <p>Faster Processing<br> Smoother Gameplay</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="4">Explore Consoles & Accessories</a></button>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card__img">
+                            <img src="./img/swiper/swiper-prl.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>STEEP</h4>
+                            <p>Faster Processing<br> Smoother Gameplay</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="4">Explore Consoles & Accessories</a></button>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card__img">
+                            <img src="./img/swiper/swiper-cod.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>Forza Motorsport 7</h4>
+                            <p>Faster Processing<br> Smoother Gameplay</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="4">Explore Consoles & Accessories</a></button>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card__img">
+                            <img src="./img/swiper/swiper-cod.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>XBOX ONE X</h4>
+                            <p>Faster Processing<br> Smoother Gameplay</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="4">Explore Consoles & Accessories</a></button>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card__img">
+                            <img src="./img/swiper/swiper-cod.png" alt="">
+                        </div>
+                        <div class="card__description">
+                            <h4>XBOX ONE X</h4>
+                            <p>Faster Processing<br> Smoother Gameplay</p>
+                        </div>
+                        <div class="card__button">
+                            <button><a href="4">Explore Consoles & Accessories</a></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="swiper-prev-next-control">
+                <label for=swiper1></label>
+                <label for=swiper2></label>
+                <label for=swiper3></label>
+            </div>
+        </div>
+        <div class="swiper__btn">
+            <button><a href="">XBOX Store</a></button>
+        </div>
+    </section>
     <div class="design">
         <div class="container">
             <div class="design__wrapper">
@@ -206,6 +320,7 @@
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Alisher105"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>

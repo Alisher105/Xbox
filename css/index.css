@@ -5,6 +5,24 @@
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
 }
 
+@media all and (max-width: 1200px) {
+  .aside {
+    padding: 66px 0 142px 0px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .aside {
+    padding: 58px 0 122px 0px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .aside {
+    padding: 48px 0 80px 0px;
+  }
+}
+
 .aside__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +113,8 @@
 }
 
 .aside__card {
+  width: 320px;
+  height: 420px;
   background: #FFFFFF;
   border: 1px solid #8DD83D;
   border-radius: 4px;
@@ -255,8 +275,12 @@
 @media all and (max-width: 992px) {
   .design__btn-lab {
     padding: 18px 40px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .design__btn-lab {
+    padding: 16px 34px;
   }
 }
 

@@ -19,21 +19,40 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="logo">
-                    <a href="#"><img src="./img/logo/Group.png" alt=""></a>
+                    <a href="./index.html"><img src="./img/logo/Group.png" alt=""></a>
                 </div>
                 <input class="side-menu" type="checkbox" id="side-menu" />
                 <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
                 <nav class="nav">
                     <ul class="menu">
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Consoles</a> </li>
-                        <li><a href="#">Community</a></li>
+                        <li><a href="#" class="menu__item">Games</a>
+                            <ul class="menu__subitem">
+                                <li><a href="">Производство</a></li>
+                                <li><a href="">Магазин</a></li>
+                                <li><a href="">Сервис</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="menu__item">Consoles</a>
+                            <ul class="menu__subitem">
+                                <li><a href="">Производство</a></li>
+                                <li><a href="">Магазин</a></li>
+                                <li><a href="">Сервис</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"> Community</a></li>
                         <li>
                             <form class="example" action="action_page.php">
                                 <input type="text" placeholder="Search.." name="search">
                             </form>
                         </li>
-                        <li><a href="#">My XBOX</a></li>
+                        <li>
+                            <a href="#" class="menu__item"><img src="./img/header/my-prof.png" alt=""> My XBOX</a>
+                            <ul class="menu__subitem">
+                                <li><a href="">Производство</a></li>
+                                <li><a href="">Магазин</a></li>
+                                <li><a href="">Сервис</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
